@@ -1,0 +1,14 @@
+<form action="/student/staff_register/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+username : <input type="text" name="username"><br>
+email : <input type="email" name="email"><br>
+password  : <input type="password" name="password"><br>
+staff_mob : <input type="number" name="staff_mob"><br>
+staff_dept : <input type="text" name="staff_dept"><br>
+qualification : <input type="text" name="qualification"><br>
+staff_pic : <input type="file" name="staff_pic"><br>
+experience : <input type="text" name="experience"><br>
+
+<input type="submit" value="Register">
+</form>
+<a href="/student/home/">Back</a>

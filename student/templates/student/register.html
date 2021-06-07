@@ -1,0 +1,15 @@
+<form action="/student/register/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+username : <input type="text" name="username"><br>
+firstname : <input type="text" name="first_name"><br>
+lastname : <input type="text" name="last_name"><br>
+email : <input type="email" name="email"><br>
+password  : <input type="password" name="password"><br>
+mobile : <input type="number" name="mobile"><br>
+dapartment : <input type="text" name="department"><br>
+father_name : <input type="text" name="father_name"><br>
+profile_pic : <input type="file" name="profile_pic"><br>
+
+<input type="submit" value="Register">
+</form>
+<a href="/student/home/">Back</a>
